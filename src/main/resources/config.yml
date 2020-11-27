@@ -14,6 +14,8 @@ kick_players: true
 #if true, anticheat will checks even OP players
 check_ops: false
 
+water: 0.15
+
 #manage all available checks (enable/disable)
 checks:
   speed: true #vertical and horizontal speed
