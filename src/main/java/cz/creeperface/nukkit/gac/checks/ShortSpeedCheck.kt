@@ -113,7 +113,7 @@ object ShortSpeedCheck {
             }
 
             if (!p.isSwimming && inWater && time - cheatData.enter > 700) {
-                maxDistance = 0.15
+                maxDistance = Server.getInstance().getConfig().getInt("water")
 
                 if (p.isSprinting || acData.speedData.lastSpeedType == SpeedData.SpeedType.SPRINT && time - acData.speedData.lastSpeedChange < 800) {
                     maxDistance *= 1.32
